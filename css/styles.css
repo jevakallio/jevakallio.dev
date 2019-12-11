@@ -1,0 +1,14 @@
+body {
+  margin: 2rem;
+}
+
+.toc {
+  display: flex;
+  flex-direction: column;
+}
+
+.toc a {
+  color: black;
+  text-decoration-color: blue;
+  /*border-bottom: 3px solid blue;*/
+}
