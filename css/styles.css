@@ -1,19 +1,22 @@
 :root {
-  --header-height: 150px;
+  --header-height: 130px;
   --left-gutter: 2rem;
-}
+  --text-color: #222;
 
-body {
+  scroll-behavior: smooth;
 }
 
 .heading {
   height: var(--header-height);
   display: flex;
+  flex-grow: 1;
   flex-direction: column;
   justify-content: center;
+  align-items: flex-start;
 }
 
 .photo {
+  display: none; /* hide on mobile */
   width: 75px;
   height: 75px;
   border-radius: 50%;
@@ -22,34 +25,49 @@ body {
 }
 
 .layout {
+  margin: 0 2rem;
   display: flex;
   align-items: column;
   justify-content: center;
 }
 
-.content {
-  margin: 0 2rem;
-}
-
 .toc {
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
+}
+
+.toc h2 {
+  margin-top: 1rem;
+}
+
+.toc a {
+  line-height: 1.2rem;
+  margin-bottom: 0.65rem;
+  color: var(--text-color);
+  text-decoration: none;
+  font-weight: 600;
+  border-bottom: 3px solid blue;
 }
 
 @media screen and (min-width: 1200px) {
   .content,
   .heading {
     width: 700px;
+    flex-grow: 0;
   }
+
+  .heading img.photo {
+    display: block;
+  }
+
   .toc {
     position: fixed;
     left: var(--left-gutter);
     top: var(--header-height);
   }
-}
 
-.toc a {
-  color: black;
-  text-decoration-color: blue;
-  /*border-bottom: 3px solid blue;*/
+  .toc h2 {
+    display: none;
+  }
 }
