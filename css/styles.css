@@ -98,15 +98,19 @@
   visibility: visible;
   -webkit-transform: scaleX(1);
   transform: scaleX(1);
-  -webkit-transition: transform 0.2s ease-in-out 0s;
+  -webkit-transition: all 0.1s ease-in-out 0s;
   transform-origin: left;
-  transition: transform 0.2s ease-in-out 0s;
+  transition: all 0.1s ease-in-out 0s;
 }
 
 .toc > a:hover:before {
   visibility: hidden;
   -webkit-transform: scaleX(0);
   transform: scaleX(0);
+}
+
+.toc > a.active {
+  font-weight: 800;
 }
 
 .toc > a:nth-of-type(2):before {
