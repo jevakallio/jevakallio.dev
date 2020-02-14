@@ -67,6 +67,20 @@
   );
 }
 
+.list-unstyled {
+  list-style: none;
+  margin-left: 0;
+  padding-left: 0;
+}
+
+a,
+a:hover,
+a:active,
+a:visited {
+  color: black;
+  font-weight: 600;
+}
+
 /* MENU */
 
 .toc {
@@ -181,5 +195,25 @@ em {
 
   .toc h2 {
     display: none;
+  }
+}
+
+.contact-icon {
+  width: 1rem;
+  height: 1rem;
+}
+
+@media print {
+  body .toc {
+    display: none;
+  }
+
+  em {
+    padding: 0;
+  }
+
+  .page-break-after {
+    page-break-after: always;
+    break-after: always;
   }
 }

@@ -47,7 +47,7 @@ window.addEventListener("DOMContentLoaded", function() {
   function setPrimaryColorBasedOnScrollPosition(progress) {
     document.documentElement.style.setProperty(
       "--primary-hue",
-      baseHue + progress / 30
+      baseHue + progress / 20
     );
   }
 });
