@@ -2,6 +2,7 @@
   --header-height: 130px;
   --left-gutter: 2rem;
   --text-color: #222;
+  --text-grey: #444;
   --primary-hue: 240;
   --contrast-hue: calc(var(--primary-hue) + 100);
   --primary-color: hsl(var(--primary-hue), 100%, 50%);
@@ -148,6 +149,15 @@ em {
   background-color: var(--light-color);
   font-weight: 600;
   padding: 0.1rem 0.3rem;
+}
+
+.cv h3 {
+  margin-bottom: 0.5em;
+}
+
+.cv .subtitle {
+  font-size: 0.9rem;
+  font-weight: 600;
 }
 
 /* DESKTOP SPECIFIC STYLES */
