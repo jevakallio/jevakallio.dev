@@ -19,6 +19,10 @@
   justify-content: center;
 }
 
+.content {
+  flex-grow: 1;
+}
+
 /* HEADER */
 
 .heading {
