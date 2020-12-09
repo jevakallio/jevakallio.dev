@@ -160,6 +160,18 @@ em {
   font-weight: 600;
 }
 
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.footer-image {
+  width: 75%;
+  margin-bottom: 1.5rem;
+}
+
 /* DESKTOP SPECIFIC STYLES */
 
 @media screen and (min-width: 1150px) {
@@ -293,12 +305,12 @@ ul.contact li img {
   }
 }
 
-
 .print-only {
   display: none;
 }
 
 @media print {
+
   body .toc {
     display: none;
   }
@@ -307,6 +319,9 @@ ul.contact li img {
     padding: 0;
   }
 
+  .screen-only {
+    display: none;
+  }
   .print-only {
     display: block;
   }
