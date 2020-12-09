@@ -148,10 +148,7 @@ a:visited {
 }
 
 em {
-  background: linear-gradient(90deg, var(--primary-color), var(--median-color));
   font-weight: 600;
-  padding: 0.1rem 0.3rem;
-  color: white;
 }
 
 .list-section h3 {
@@ -251,6 +248,12 @@ ul.contact li img {
 }
 
 @media screen {
+  em {
+    background: linear-gradient(90deg, var(--primary-color), var(--median-color));
+    padding: 0.1rem 0.3rem;
+    color: white;
+  }
+
   .list-section-item {
     border: 2px solid var(--primary-color);
     border-radius: 3px;
