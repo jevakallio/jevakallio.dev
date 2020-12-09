@@ -5,8 +5,9 @@ window.addEventListener("DOMContentLoaded", function() {
 
   window.addEventListener("scroll", function() {
     requestAnimationFrame(function() {
+      const width = window.document.body.clientWidth;
       const progress = window.scrollY; // window.document.body.clientHeight;
-      setPrimaryColorBasedOnScrollPosition(progress);
+      setPrimaryColorBasedOnScrollPosition(progress, width);
     });
   });
 
@@ -44,10 +45,11 @@ window.addEventListener("DOMContentLoaded", function() {
       }
     });
   }
-  function setPrimaryColorBasedOnScrollPosition(progress) {
+  function setPrimaryColorBasedOnScrollPosition(progress, width) {
+    var hue = baseHue + progress / 40 + (width / 50);
     document.documentElement.style.setProperty(
       "--primary-hue",
-      baseHue + progress / 20
+      hue
     );
   }
 });

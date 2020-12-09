@@ -4,8 +4,10 @@
   --text-color: #222;
   --text-grey: #444;
   --primary-hue: 240;
-  --contrast-hue: calc(var(--primary-hue) + 100);
+  --median-hue: calc(var(--primary-hue) + 25);
+  --contrast-hue: calc(var(--primary-hue) + 120);
   --primary-color: hsl(var(--primary-hue), 100%, 50%);
+  --median-color: hsl(var(--median-hue), 100%, 50%);
   --contrast-color: hsl(var(--contrast-hue), 100%, 50%);
   --light-color: hsl(var(--primary-hue), 100%, 95%);
   --faint-color: hsl(var(--primary-hue), 100%, 98%);
@@ -47,7 +49,7 @@
   position: fixed;
   left: var(--left-gutter);
 
-  background: no-repeat url("../img/photo.jpg"),
+  background: no-repeat url("../img/photo_alt.jpg"),
     linear-gradient(var(--primary-color), var(--contrast-color));
   background-blend-mode: screen;
   background-size: cover;
@@ -146,9 +148,10 @@ a:visited {
 }
 
 em {
-  background-color: var(--light-color);
+  background: linear-gradient(90deg, var(--primary-color), var(--median-color));
   font-weight: 600;
   padding: 0.1rem 0.3rem;
+  color: white;
 }
 
 .list-section h3 {
