@@ -235,7 +235,7 @@ footer {
   }
 }
 
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 750px) {
   ul.contact {
     display: flex;
   }
