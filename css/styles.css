@@ -293,6 +293,11 @@ ul.contact li img {
   }
 }
 
+
+.print-only {
+  display: none;
+}
+
 @media print {
   body .toc {
     display: none;
@@ -300,6 +305,10 @@ ul.contact li img {
 
   em {
     padding: 0;
+  }
+
+  .print-only {
+    display: block;
   }
 
   .page-break-after {
