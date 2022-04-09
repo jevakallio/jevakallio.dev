@@ -10,11 +10,10 @@
   --median-color: hsl(var(--median-hue), 100%, 50%);
   --contrast-color: hsl(var(--contrast-hue), 100%, 50%);
   --light-color: hsl(var(--primary-hue), 100%, 95%);
-  --faint-color: hsl(var(--primary-hue), 100%, 98%);
+  --faint-color: hsl(var(--contrast-hue), 100%, 98%);
 
   scroll-behavior: smooth;
 }
-
 
 .layout {
   margin: 0 2rem;
